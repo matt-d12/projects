@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+    color: #143447;
+    background-color: white;
+    background-size: 20px 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header styles */
+header {
+    background-color: #ff0763;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo img {
+    width: 20%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #143447;
+    color: white;
+}
+
+.btn {
+    background-color: #444;
+    color: #fff !important;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 0;
+}
+
+/* Overview section */
+.overview {
+    font-family: "Orbitron", Arial, sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.overview-text {
+    font-family: "Roboto", Arial, sans-serif;
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.overview img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Features section */
+.features h2 {
+    font-family: "Orbitron", Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.feature-box {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.features img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.feature-box p {
+    color: #666;
+    font-size: 14px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.features-autoinstall img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.auto-install-text h2 {
+    font-family: "Orbitron", Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.auto-install-text em {
+    display: block;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+ /* Style the Image Used to Trigger the Modal */
+ #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  } 
+
+/* Footer styles */
+footer {
+    background-color: #b7b7b7;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    header .container,
+    footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog about books for kids - reviews and recommendations for young readers">
+    <meta name="author" content="Kids Read for Fun">
+    <title>Kids Read for Fun - Book Reviews for Young Readers</title>
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <script src="blog.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="skiptocontent">
+        <a href="#maincontent">skip to main content</a>
+    </div>
+        <h1>Kids Read for Fun</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#archive">Archive</a></li>
+            <li><a href="#search">Search</a></li>
+        </ul>
+    </nav>
+    <main id="maincontent">
+        <section id="articles"></section>
+        <aside>
+            <div class="filter-section">
+                <label for="sort">Sort:</label>
+                <select id="sort" name="sort">
+                    <option value="">Select sort option</option>
+                    <option value="date">Date</option>
+                    <option value="title">Title</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <div class="filter-section">
+                <label for="age">Age:</label>
+                <select id="age" name="age">
+                    <option value="">Select age range</option>
+                    <option value="0-5">0-5</option>
+                    <option value="6-9">6-9</option>
+                    <option value="10-14">10-14</option>
+                    <option value="12-16">12-16</option>
+                </select>
+            </div>
+            <div class="filter-section">
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="">Select genre</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="sci-fi">Science Fiction</option>
+                </select>
+            </div>
+            <div class="filter-section">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="">Select rating</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

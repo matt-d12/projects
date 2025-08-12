@@ -1,0 +1,184 @@
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+#form-container {
+  margin: auto;
+  width: 500px;
+  height: 290px;
+  position: relative;
+}
+
+#card-front,
+#card-back {
+  position: absolute;
+  background-color: #ccc;
+  width: 390px;
+  height: 250px;
+  border-radius: 6px;
+  padding: 20px 30px 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: black;
+}
+
+#shadow {
+  position: absolute;
+  right: 0;
+  width: 284px;
+  height: 214px;
+  top: 36px;
+  background-color: #000;
+  z-index: -1;
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+#image-container {
+  width: 100%;
+  position: relative;
+  height: 55px;
+  margin-bottom: 5px;
+  line-height: 55px;
+}
+
+img {
+    position: absolute;
+    right: 20px;
+}
+
+#amount {
+  font-size: 12px;
+}
+
+#amount strong {
+  font-size: 14px;
+}
+
+#card-image {
+  float: right;
+  height: 100%;
+}
+
+label {
+  display: block;
+  margin: 0 auto 7px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: white;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 0 0 25px;
+  color: black;
+  font-size: 12px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .7px;
+}
+
+#card-number,
+#card-holder {
+  width: 100%;
+}
+
+#cardholder-container {
+  width: 60%;
+  display: inline-block;
+}
+
+#exp-container {
+  margin-left: 10px;
+  width: 32%;
+  display: inline-block;
+  text-align: center;
+}
+
+#card-month {
+  width: 45%;
+}
+
+#card-year {
+  width: 45%;
+  float: right;
+}
+
+#cvc-container {
+  position: absolute;
+  width: 110px;
+  right: -115px;
+  bottom: -10px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+#card-cvc {
+  width: 60px;
+  margin-bottom: 0;
+}
+
+#cvc-container label {
+  width: 100%;
+}
+
+#cvc-container p {
+  font-size: 6px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  letter-spacing: .5px;
+}
+
+#card-back {
+  top: 40px;
+  right: 0;
+  z-index: -2;
+}
+
+#card-stripe {
+  width: 100%;
+  height: 55px;
+  background-color: #555555;
+  position: absolute;
+  right: 0;
+}
+
+#card-token {
+  display: none;
+}
+
+#card-button {
+  background-color: #ccc;
+  color: black;
+  position: absolute;
+  bottom: -55px;
+  right: 0;
+  width: 150px;
+  border-radius: 8px;
+  height: 42px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#card-button:hover {
+  background-color: aqua;
+}
+
+.hidden {
+  display: none;
+}

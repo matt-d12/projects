@@ -1,0 +1,183 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: white;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    border-bottom: 2px solid #EFC69B;
+}
+
+h1 {
+    font-family: 'Lora', Impact, serif;
+    color: #473144;
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 2px solid #EFC69B;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    justify-items: end;
+    gap: 30px;
+    max-width: 1200px;
+    padding-right: 20px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #AF1B3F;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #473144;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    background-color: white;
+}
+
+.content {
+    background-color: white;
+}
+
+aside {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #EFC69B;
+    height: fit-content;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #473144;
+}
+
+.filter-section select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #EFC69B;
+    background-color: white;
+    color: #473144;
+}
+
+#articles {
+    background-color: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.article-meta {
+    background-color: white;
+    padding: 20px;
+    border-right: 2px solid #EFC69B;
+}
+
+.article-date {
+    font-size: 18px;
+    color: #473144;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.article-ages, .article-genre, .article-rating {
+    font-size: 14px;
+    color: #473144;
+    margin-bottom: 4px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.article-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.article-image {
+    width: 120px;
+    height: 160px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.article-text h2 {
+    font-family: 'Lora', serif;
+    margin: 0 0 15px 0;
+    color: #AF1B3F;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.article-text p {
+    margin: 0;
+    color: #473144;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.skiptocontent a {
+    background-color: #AF1B3F;
+    color: white;
+    position: absolute;
+    top: -40px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}

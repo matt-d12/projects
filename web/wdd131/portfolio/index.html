@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio showcasing projects and my resume">
+    <meta name="author" content="Matt D'Angina">
+     <title>Matt D'Angina Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo" aria-label="Software by Matt">
+      <img src="images/logo.PNG" alt="Logo Image">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a class="contact-btn" href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <img src="images/matt.png" alt="Matt picture" />
+      <div>
+        <h1>Hey! I am Matt D'Angina.</h1>
+        <p>I am working towards a degree in software development and currently work in IT.
+          My hobbies include making small indie games and playing board games with family.
+          I made this page to showcase a few projects I am proud of as well as for having 
+          a full resume history as I have had various jobs since graduating in 2014.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="project-card" data-project="1">
+        <img src="images/dicegame.png" alt="Dice Game Pic" />
+        <div class="project-text">
+          <h2>Python Project - Dice Game</h2>
+          <p>For a class we had to make an executable program using Python.
+            As I love various board games, I decided to make a small dice
+            game where you roll against the computer. 
+          </p>
+        </div>
+        <button class="learn-more" data-project="1">Learn more</button>
+      </div>
+
+      <div class="project-card" data-project="2">
+        <img src="images/sql.png" alt="SQL Structure" />
+        <div class="project-text">
+          <h2>SQL Queries</h2>
+          <p>A project I worked on to forward engineer a database.
+            Once created, formulated inserts to populate data, and query for certain results.
+          </p>
+        </div>
+        <button class="learn-more" data-project="2">Learn more</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">Logo</div>
+    <div class="socials">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Modal for 'Learn More'-->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="image" alt="Project detail" id="modal-image"/>
+      <div class="modal-text" id="modal-text">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

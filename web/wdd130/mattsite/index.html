@@ -1,0 +1,92 @@
+<!--
+File Name: index.html
+Author: Matt D'Angina
+Course: WDD 130 - Winter 2025
+BYU-Idaho | Teacher: Carl Bohman
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal site showcasing projects in software development and game design.">
+    <title>Matt's Site</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Matt's Site Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="software.html">Software Development</a></li>
+                    <li><a href="gamedev.html">Game Design</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <div class="container">
+            <!-- Overview section -->
+            <section class="overview">
+                <h2>Overview</h2>
+                <div class="overview-text">
+                    <p>Hi there! My name is Matt and this is a small webpage to showcase some projects and work I have done in both the realm of software development as well as game design. These projects range from corporate scripting for company app installations, to simple Python programs, to 2D pixel games and many things in between. The work and things shown here are both from a professional/educational background as well as some passion projects or self-taught ideas and solutions.</p>
+                </div>
+            </section>
+
+            <!-- Features section -->
+            <section class="features">
+                <h2>Features</h2>
+                <div class="feature-box">
+                    <img src="images/Autoinstall.png" alt="Screenshot of Auto-Install process software">
+                    <p>This is a screenshot of a software development project I was a part of known as the auto-install process.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="images/rocks_in_space.png" alt="Screenshot of 'Rocks in Space' game project">
+                    <p>This is a screenshot of my first completed game project that pays homage to Asteroids.</p>
+                </div>
+                <div class="feature-box">
+                    <!-- Trigger the Modal -->
+                    <img id="myImg" src="images/platformer.png" alt="Screenshot of Platformer game project" style="width:100%;max-width:300px">
+                    <p>This is a screenshot of a game project I am currently working on being a small platformer/shooter game.</p>
+                </div>
+            </section>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01" src="images/platformer.png" alt="Large view of Platformer game image">
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Matt's Site Logo">
+            </div>
+            <div class="footer-site-plan">
+                <a href="site-plan.html" class="btn">Site-Plan</a>
+            </div>
+            <div class="footer-contact">
+                <a href="contact.html" class="btn">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript section for Modal image -->
+    <script src="script.js"></script>
+</body>
+</html>
